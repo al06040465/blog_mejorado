@@ -15,7 +15,7 @@ header { /* Estilos para el encabezado */
 main { /* Estilos para el contenido principal */
   max-width: 800px; /* Ancho máximo de 800px */
   margin: 20px auto; /* Centra el contenido y deja 20px de margen arriba y abajo */
-  background: white; /* Fondo blanco */
+  background: white; /* Fondo negro */
   padding: 20px; /* Espaciado interno de 20px */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera alrededor */
@@ -40,18 +40,18 @@ h2 { /* Estilos para subtítulos */
 }
 
 .comment-form button { /* Estilos específicos para los botones */
-  background: #333; /* Fondo gris oscuro */
+  background: #333; /* Fondo rojo oscuro */
   color: white; /* Texto en blanco */
   border: none; /* Sin borde */
   cursor: pointer; /* El cursor cambia a "mano" al pasar sobre el botón */
 }
 
 .comment-form button:hover { /* Efecto cuando se pasa el ratón sobre el botón */
-  background: #555; /* Cambia a gris más claro */
+  background: #555; /* Cambia a rojo más claro */
 }
 
 .comment-form .btn-delete { /* Botón de borrar comentarios */
-  background: darkred; /* Fondo rojo oscuro */
+  background: darkred; /* Fondo verde claro */
 }
 
 .comment-form .btn-delete:hover { /* Efecto hover para el botón de borrar */
@@ -72,4 +72,29 @@ h2 { /* Estilos para subtítulos */
 
 .comment small { /* Estilos para la fecha de los comentarios */
   color: gray; /* Texto en color gris */
+}
+.like-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-like {
+  background: #e91e63; /* Color rosa */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-like:hover {
+  background: #c2185b;
+}
+
+.like-count {
+  font-weight: bold;
+  color: #333;
 }
