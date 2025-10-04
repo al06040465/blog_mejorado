@@ -89,3 +89,18 @@ function borrarComentarios() { // Función para borrar todos los comentarios
     document.getElementById('comentarios').innerHTML = '<h3>Comentarios</h3>'; // Restaura la sección de comentarios a su estado inicial
   }
 }
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Escucha los clics en todos los botones "like"
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("btn-like")) {
+        const btn = e.target;
+        const countSpan = btn.nextElementSibling;
+
+        // Incrementar el número de likes
+        let currentCount = parseInt(countSpan.textContent, 10);
+        countSpan.textContent = currentCount + 1;
+      }
+    });
+  });
+</script>
