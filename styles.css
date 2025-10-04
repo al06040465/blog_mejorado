@@ -2,7 +2,7 @@ body { /* Estilos generales para toda la página */
   font-family: Arial, sans-serif; /* Fuente de texto principal */
   margin: 0; /* Elimina los márgenes por defecto */
   padding: 0; /* Elimina los rellenos por defecto */
-  background: #f4f4f9; /* Color de fondo gris claro */
+  background: #f4f4f9; /* Color de fondo amarillo claro */
 }
 
 header { /* Estilos para el encabezado */
